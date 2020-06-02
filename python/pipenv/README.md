@@ -11,11 +11,11 @@
 #### Specifying Versions of Python
 
 ```
-$ cd myproject
+cd myproject
 # list versions be able to use
-$ pyenv install --list
-$ pyenv install 3.6
-$ pipenv --python 3.6
+pyenv install --list
+pyenv install 3.6
+pipenv --python 3.6
 ```
 
 If you have not installed ver 3.6, it install ver3.6.  
@@ -24,14 +24,14 @@ This command generates `Pipfile`.
 ### After cloning
 
 ```
-$ cd myproject
-$ pipenv install
+cd myproject
+pipenv install
 ```
 
 ### Environment Management with Pipenv
 
 ```
-$ pipenv install [package names]
+pipenv install [package names]
 ```
 
 #### Make Pipfile.lock
@@ -39,13 +39,13 @@ $ pipenv install [package names]
 After installing some packages, you should make `Pipfile.lock` with following command.
 
 ```
-$ pipenv lock
+pipenv lock
 ```
 
 ## Execute
 
 ```
-$ pipenv run python something.py
+pipenv run python something.py
 ```
 
 ### Alias
