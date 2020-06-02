@@ -12,6 +12,8 @@
 
 ```
 $ cd myproject
+# list versions be able to use
+$ pyenv install --list
 $ pyenv install 3.6
 $ pipenv --python 3.6
 ```
