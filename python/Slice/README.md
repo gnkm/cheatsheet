@@ -20,10 +20,8 @@ print(_list[-10]) # => 0, 境界値
 ### 使い方
 
 ```
-_list[start_index:end_index + 1:step_num]
+_list[start_index:end_index:step_num]
 ```
-
-ただし，返り値に含まれるのは `_list[end_index]` まで．
 
 ### step_num なし
 
@@ -40,7 +38,7 @@ print(_list[6:3]) # => []
 print(_list[:-1]) # => [0, 1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
-start_num < 0 の場合，返り値に含まれるのは `_list[start_num + 1]` から
+start_num < 0 の場合，末尾の要素が `-1`，その前の要素が `-2` ... となっている．
 
 ```
 print(_list[-3:]) # => [7, 8, 9]
