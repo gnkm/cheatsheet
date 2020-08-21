@@ -6,8 +6,8 @@
 
 ```
 cd $HOME
-ssh-keygen -t rsa -b 4096 -f .ssh/id_rsa_business.pub
-ssh-keygen -t ecdsa -b 384 -f .ssh/id_ecdsa_business.pub
+ssh-keygen -t rsa -b 4096 -f .ssh/id_rsa_business -C {mail@example.com}
+ssh-keygen -t ecdsa -b 384 -f .ssh/id_ecdsa_business  -C {mail@example.com}
 ```
 
 ## .ssh/config を編集する
@@ -35,7 +35,7 @@ Host github-business
 ## 接続を確認する
 
 ```
-ssh -T github-business
+ssh -T git@github-business
 ```
 
 接続できれば下記のように表示される。
