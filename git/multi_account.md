@@ -65,3 +65,11 @@ Github でコピーできる URL
 ```
 git clone git@github-business:genki-matsunaga/demand-forecast.git
 ```
+
+### コミットするユーザーのアカウントを編集する
+
+```
+cd my/project
+git config --local user.name "サブアカウント"
+git config --local user.email "サブアカウントメールアドレス"
+```
