@@ -63,7 +63,7 @@ Github でコピーできる URL
 で clone する。
 
 ```
-git clone git@github-business:genki-matsunaga/demand-forecast.git
+git clone git@github-business:genki-matsunaga/{repository name}.git
 ```
 
 ### コミットするユーザーのアカウントを編集する
