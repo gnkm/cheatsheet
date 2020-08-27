@@ -66,6 +66,9 @@ Github でコピーできる URL
 git clone git@github-business:genki-matsunaga/{repository name}.git
 ```
 
+※ うまくいかないことがある．
+その場合，新しくターミナルを開いて操作するとうまくいくことがある．
+
 ### コミットするユーザーのアカウントを編集する
 
 ```
