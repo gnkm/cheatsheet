@@ -50,6 +50,14 @@ Hi {yourname}! You've successfully authenticated, but GitHub does not provide sh
 
 GitHub のレポジトリページにある「Folk」ボタンをクリックする。
 
+### ssh-add コマンドを実行する
+
+```
+eval (ssh-agent -c)
+ssh-add .ssh/id_rsa_business
+ssh-add .ssh/id_ecdsa_business
+```
+
 ### レポジトリを clone する
 
 Github でコピーできる URL 
@@ -65,9 +73,6 @@ Github でコピーできる URL
 ```
 git clone git@github-business:genki-matsunaga/{repository name}.git
 ```
-
-※ うまくいかないことがある．
-その場合，新しくターミナルを開いて操作するとうまくいくことがある．
 
 ### コミットするユーザーのアカウントを編集する
 
