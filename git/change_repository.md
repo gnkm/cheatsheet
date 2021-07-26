@@ -48,5 +48,6 @@ git remote -v
 git commit -m 'something message'
 # github ではメインのブランチが master ではなく main になっている
 git branch -M main
+git branch -u origin/main main
 git push -u origin master
 ```
