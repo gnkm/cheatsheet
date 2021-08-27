@@ -4,6 +4,16 @@ cf. [gitでローカルブランチにmasterなんて（普通は）要りませ
 
 ```
 git config --global push.default current
+```
+
+※ これは `.gitconfig` に下記を追加するのと同じ
+
+```
+[push]
+	default = current
+```
+
+```
 git checkout -b feature1 origin/master
 
 # origin/master に対してrebaseできる
