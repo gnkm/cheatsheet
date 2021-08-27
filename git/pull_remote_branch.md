@@ -1,8 +1,8 @@
 # Pull remote branch
 
 ```
-% git fetch origin <branch name>
-% git checkout <branch name>
+git fetch origin <branch name>
+git checkout <branch name>
 ```
 
 cf. 
