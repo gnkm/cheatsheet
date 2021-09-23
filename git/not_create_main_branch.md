@@ -21,4 +21,6 @@ git pull --rebase
 
 # push先はリモートの同名ブランチである origin/feature1 になる
 git push
+
+git branch --delete master
 ```
