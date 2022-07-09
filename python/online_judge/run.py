@@ -6,12 +6,12 @@ if 'PyPy' in sys.version:
     pypyjit.set_param('max_unroll_recursion=-1')
 
 input = lambda: sys.stdin.readline().rstrip('\r\n').split()
-i_sli = lambda: list(map(int, input()))
-i_slf = lambda: list(map(float, input()))
-i_sls = lambda: list(input())
-i_mli = lambda n: [i_sli() for _ in range(n)]
-i_mlf = lambda n: [i_slf() for _ in range(n)]
-i_mls = lambda n: [i_sls() for _ in range(n)]
+i_sli = lambda: list(map(int, input()))        # input single line int
+i_slf = lambda: list(map(float, input()))      # input single line float
+i_sls = lambda: list(input())                  # input single line str
+i_mli = lambda n: [i_sli() for _ in range(n)]  # input multi line int
+i_mlf = lambda n: [i_slf() for _ in range(n)]  # input multi line float
+i_mls = lambda n: [i_sls() for _ in range(n)]  # input multi line str
 
 sys.setrecursionlimit(1000000)
 
