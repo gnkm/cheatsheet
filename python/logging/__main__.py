@@ -1,3 +1,11 @@
+"""Try logging module.
+
+Usage:
+    python __main__.py
+Output:
+    [2022-08-02 16:01:11] __main__ DEBUG message: something message
+"""
+
 import datetime as dt
 import logging
 import sys
