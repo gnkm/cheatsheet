@@ -20,7 +20,7 @@ def main():
         fmt="[%(asctime)s] %(name)s %(levelname)s %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
     )
-    formatter.converter = lambda x: dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).timetuple()
+    formatter.converter = lambda _: dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).timetuple()
     ch.setFormatter(formatter)
     logger.addHandler(ch)
 
