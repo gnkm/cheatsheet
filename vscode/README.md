@@ -14,7 +14,6 @@
 - ファイルナビゲータ内での移動: Cmd + Shift + E + arrow
 - サイドバーの表示 / 非表示トグル: Cmd + b
 - ターミナルの表示 / 非表示トグル: Cmd + `
-- 折りたたみ / 展開トグル(Toggle Folds): Cmd + k, Cmd + l
 
 ## 編集エリア
 
@@ -26,3 +25,4 @@
 - 選択行を上に移動: Alt + up
 - 選択行を下に移動: Alt + down
 - クイック修正: Cmd + .
+- 折りたたみ / 展開トグル(Toggle Folds): Cmd + k, Cmd + l
