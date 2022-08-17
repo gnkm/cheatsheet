@@ -2,6 +2,9 @@
 
 cf. [gitでローカルブランチにmasterなんて（普通は）要りません - Qiita](https://qiita.com/igrep/items/f2e927a31e826766b8c0)
 
+`git push` でプッシュするブランチを指定せずにすむようにする。
+(現在のブランチをプッシュする。)
+
 ```
 git config --global push.default current
 ```
@@ -13,14 +16,26 @@ git config --global push.default current
 	default = current
 ```
 
+ブランチ作成
+
 ```
-git checkout -b feature1 origin/master
+git checkout -b feature1 origin/main
+```
 
-# origin/master に対してrebaseできる
+origin/main に対してrebase する。
+
+```
 git pull --rebase
+```
 
-# push先はリモートの同名ブランチである origin/feature1 になる
+この時 push 先はローカルの同名ブランチである origin/feature1 になる
+
+```
 git push
+```
 
-git branch --delete master
+ローカルの main ブランチを削除する。
+
+```
+git branch --delete main
 ```
