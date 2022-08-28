@@ -22,7 +22,10 @@ import warnings
 warnings.filterwarnings('ignore')
 pd.set_option('display.precision', 2)
 pd.set_option('display.max_columns', 60)
-sns.set(style='darkgrid', font=['IPAexGothic'])
+sns.set(
+    font=['IPAexGothic'],
+    style='darkgrid',
+)
 
 # `df.describe(percentiles=my_percentiles)` のように使う。
 # default は `[.25, .5, .75]`.
