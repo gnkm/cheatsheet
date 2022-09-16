@@ -4,13 +4,31 @@
 
 ### Create virtual env
 
+Install `pyenv`.
+
 ```
 anyenv install pyenv
+```
+
+Install any version.
+
+```
 pyenv install 3.10.1
+```
+
+Specify the version to use.
+
+```
 poetry env use $HOME/.anyenv/envs/pyenv/versions/3.10.1/bin/python
 ```
 
-### Prepare
+Enter virtual environment.
+
+```
+poetry shell
+```
+
+### Preparation
 
 make `pyproject.toml`.
 
@@ -39,12 +57,6 @@ install packages.
 
 ```
 poetry install
-```
-
-make specific python version environment.
-
-```
-poetry shell
 ```
 
 ### Execute
