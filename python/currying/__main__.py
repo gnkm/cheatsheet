@@ -24,6 +24,9 @@ def main():
     val_simple = sum3_simple(x, y, z)
     val_curried = sum3_curried(x, y, z)
 
+    sum3_simple_lambda = lambda _x, _y, _z: _x + _y + _z
+    val_simple_lambda = sum3_simple_lambda(x, y, z)
+
     sum3_lambda = lambda _x: (
         lambda _y: (
             lambda _z: _x + _y + _z
@@ -38,6 +41,7 @@ def main():
 
     print(f'{val_simple = }')  # => 6
     print(f'{val_curried = }')  # => 6
+    print(f'{val_simple_lambda = }')  # => 6
     print(f'{val_lambda = }')  # => 6
     print(f'{val_partial = }')  # => 6
 
