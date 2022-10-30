@@ -22,14 +22,14 @@ def main():
     z = 3
 
     val_simple = sum3_simple(x, y, z)
-    val_curry = sum3_curry(x, y, z)
-    val_lambda = (
-        lambda _x: (
-            lambda _y: (
-                lambda _z: _x + _y + _z
-            )
+    val_curried = sum3_curried(x, y, z)
+
+    sum3_lambda = lambda _x: (
+        lambda _y: (
+            lambda _z: _x + _y + _z
         )
-    )(x)(y)(z)
+    )
+    val_lambda = sum3_lambda(x)(y)(z)
 
     # 部分適用
     sum3_x = partial(sum3_simple, x)
@@ -37,7 +37,7 @@ def main():
     val_partial = sum3_x_y(z)
 
     print(f'{val_simple = }')  # => 6
-    print(f'{val_curry = }')  # => 6
+    print(f'{val_curried = }')  # => 6
     print(f'{val_lambda = }')  # => 6
     print(f'{val_partial = }')  # => 6
 
@@ -46,14 +46,14 @@ def sum3_simple(x: int, y: int, z: int) -> int:
     return x + y + z
 
 
-def sum3_curry(x: int, y: int, z: int) -> int:
+def sum3_curried(x: int, y: int, z: int) -> int:
     """Return x + y + z.
 
     カリー化して算出する。
 
     大まかに書くと下記のとおり。
 
-    sum3_curry(x, y, z) = f(x)(y)(z) = g(y)(z) = h(z) = x + y + z
+    sum3_curried(x, y, z) = f(x)(y)(z) = g(y)(z) = h(z) = x + y + z
 
     h(z) が本質の関数。
     カリー化なので内部の関数は引数を 1 つしかとらず、コードで書くと h(z) となるが
