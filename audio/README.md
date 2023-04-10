@@ -2,10 +2,10 @@
 
 ## Convert File
 
-### SoX
+Use `ffmpeg` command.
 
 ```sh
-sox input.m4a output.wav
+ffmpeg -i input.m4a output.wav
 ```
 
 You can `afconvert` command if you use Mac.
